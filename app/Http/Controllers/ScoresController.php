@@ -42,7 +42,7 @@ class ScoresController extends Controller
 
         try {
             $filename = "replay-{$mode}_{$score->beatmap_id}_{$score->getKey()}.osr";
-            $content = $replayFile->get();
+            $content = file_get_contents("/app/public/uploads-replay/{$mode}/{$filename}");
 
             return response()->streamDownload(function () use ($replayFile, $content) {
                 echo $replayFile->headerChunk();
