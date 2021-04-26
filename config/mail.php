@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'osu@ppy.sh', 'name' => 'osu!'],
+    'from' => ['address' => 'osu@acrylicstyle.xyz', 'name' => 'osu!'],
 
     /*
     |--------------------------------------------------------------------------

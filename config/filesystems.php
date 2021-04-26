@@ -63,8 +63,8 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => public_path().'/uploads',
-            'base_url' => env('APP_URL', 'http://localhost').'/uploads',
+            'root' => public_path(),
+            'base_url' => 'https://assets.ppy.sh',
         ],
 
         'local-avatar' => [
