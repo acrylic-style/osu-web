@@ -126,7 +126,7 @@ class NotificationsController extends Controller
 
         if (($url[0] ?? null) === '/') {
             $host = request()->getHttpHost();
-            $protocol = request()->secure() ? 'wss' : 'ws';
+            $protocol = request()->secure() ? 'wss' : 'wss';
             $url = "{$protocol}://{$host}{$url}";
         }
 
