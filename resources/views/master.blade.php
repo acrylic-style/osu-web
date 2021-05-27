@@ -129,6 +129,11 @@
         @include('layout._loading_overlay')
         @include('layout.popup-container')
 
+        <!-- stolen from smoogi https://github.com/ppy/osu-web/commit/095b34a8644dbe81630ba94877e82404b82223cb -->
+        <div class="not-official-footer" style="width: 100%; height: 50px; background: #ff0000; position: fixed; bottom: 0; left: 0; text-align: center; color: #fff; line-height: 50px;">
+            <b>This is a development instance of the <a href="https://osu.ppy.sh" style="color: #fff; text-decoration: underline;">osu! website</a>. Please do not login with your osu! credentials.</b>
+        </div>
+
         <script id="json-route-section" type="application/json">
             {!! json_encode($currentRoute) !!}
         </script>
